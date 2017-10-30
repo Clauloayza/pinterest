@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pinterest (User)</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="shortcut icon" href="image/pinterest.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<header>
+			<nav class="navbar navbar-default">
+					<div class="container-fluid">
+					  <div class="navbar-header">
+						<a class="navbar-brand" href="#"><img class="pinterestLogo" src="image/pinterestLogo.png" alt=""></a>
+						<form class="navbar-form navbar-left" >
+								<div class="form-group">
+								  <i class="glyphicon glyphicon-search" type="submit"></i>
+								  <input type="text" class="form-control" placeholder="     Search">
+								</div>
+						</form>
+					  </div>
+					  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="#">
+								
+							  </a>
+						  </li>
+						  <li><a href="#">Inicio</a></li>
+						  <li><a href="#"><i class="glyphicon glyphicon-user"></i> Claudia</a></li>
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+							<ul class="dropdown-menu">
+							  <li><a href="#">Action</a></li>
+							  <li><a href="#">Another action</a></li>
+							  <li><a href="#">Something else here</a></li>
+							  <li role="separator" class="divider"></li>
+							  <li><a href="#">Separated link</a></li>
+							</ul>
+						  </li>
+						  <li><a href="#"><span class="glyphicon glyphicon-comment"></span></a></li>
+						  <li><a href="#"><span class="glyphicon glyphicon-option-horizontal"></span></a></li>
+						</ul>
+					  </div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				  </nav>
+	</header>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-4">
+				<div class="imageOfPinterest text-center"></div>
+			</div>
+			<div class="col-md-3 col-xs-4">
+				<div class="listaOfPinterest text-center" ></div>
+			</div>
+			<div class="col-md-3 col-xs-4">
+				<div class="nextOfPinterest text-center"></div>
+			</div>
+			<div class="col-md-3 col-xs-4">
+				<div class="nexttwoOfPinterest text-center"></div>
+			</div>
+		</div>
+	</section>
+	
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.js"
+		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript" src="plugin.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('.imageOfPinterest').pinterest(
+				["236x/94/0b/74/940b74fd880f93abf371f0af3e787555.jpg", "236x/79/cb/cd/79cbcdd4ace82caac9eb6be6709f4df7.jpg",
+				"236x/da/07/30/da0730ebbc0dfc8a4399432aaf08ee9b.jpg", 
+				"236x/e0/21/36/e021365d48987a580bdd7971fc063920.jpg",
+				"236x/03/15/7b/03157b6d510fdb5819f54ced54d5b7c1.jpg"]
+			);
+
+			$('.listaOfPinterest').pinterest(
+				[
+					"236x/da/07/30/da0730ebbc0dfc8a4399432aaf08ee9b.jpg", 
+					"236x/e0/21/36/e021365d48987a580bdd7971fc063920.jpg", 
+					"236x/03/15/7b/03157b6d510fdb5819f54ced54d5b7c1.jpg",
+					"236x/79/cb/cd/79cbcdd4ace82caac9eb6be6709f4df7.jpg",
+					"236x/da/07/30/da0730ebbc0dfc8a4399432aaf08ee9b.jpg"
+				],
+			);
+			$('.nextOfPinterest').pinterest(
+				[
+					"236x/e0/21/36/e021365d48987a580bdd7971fc063920.jpg",
+					"236x/da/07/30/da0730ebbc0dfc8a4399432aaf08ee9b.jpg",
+					"236x/94/0b/74/940b74fd880f93abf371f0af3e787555.jpg", "236x/79/cb/cd/79cbcdd4ace82caac9eb6be6709f4df7.jpg",
+					"236x/03/15/7b/03157b6d510fdb5819f54ced54d5b7c1.jpg"]
+			);
+			$('.nexttwoOfPinterest').pinterest(
+				[
+					"236x/79/cb/cd/79cbcdd4ace82caac9eb6be6709f4df7.jpg",
+					"236x/94/0b/74/940b74fd880f93abf371f0af3e787555.jpg", 
+					"236x/da/07/30/da0730ebbc0dfc8a4399432aaf08ee9b.jpg", 
+					"236x/e0/21/36/e021365d48987a580bdd7971fc063920.jpg",
+					"236x/03/15/7b/03157b6d510fdb5819f54ced54d5b7c1.jpg"]
+			);
+		});
+	</script>
+
+</body>
+</html>

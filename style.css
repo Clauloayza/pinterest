@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    padding: 0 15px 11px 15px;
+}
+.pinterestLogo{
+    padding: 0;
+    width: 60%;
+}
+
+li{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #B9B1B1;
+}
+.navbar-form{
+    padding-left: 0px;
+    margin-top: 15px;
+}
+.navbar-form input{
+    width: 900px;
+    background: #E0DBDB;
+    color:#B9B1B1;
+    font-weight: 600;
+    font-size: 17px;
+    border-color: 1px solid #B9B1B1;
+    border: inherit;
+	padding-right: 50%;
+}
+.navbar-brand>img{
+    margin-right: -351px;
+}
+.imageOfPinterest{
+	width: auto;
+}
+.textimg{
+	font-size: 14px;
+	color: #585858;
+	font-weight: bold;
+	margin:4px 0 25px;
+	padding: 0 20px;
+}
+img{
+	border-radius: 20px;
+}
+.glyphicon-search{
+	position: absolute;
+	top: 25px;
+	left: 8%;
+	font-weight: bold;
+}
